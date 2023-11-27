@@ -44,5 +44,7 @@ ClipPath(
       );
 ```
 ### CREATED BY
+```
  NOBOMAN
-<img src="https://github.com/NouzNoushad/ticket_clippers/raw/main/ticket_clippers.jpg" width="100em" hight="100em"/>
+```
+<img src="https://github.com/NouzNoushad/ticket_clippers/raw/main/noboman.jpg" width="100em" hight="100em"/>
