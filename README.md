@@ -15,7 +15,7 @@ import 'package:ticket_clippers/ticket_clippers.dart';
 ```
 
 ## Screenshots
- <img src="https://github.com/NouzNoushad/ticket_clippers/raw/main/ticket_clippers.jpg" width="400em" />
+ <img src="https://raw.github.com/NouzNoushad/ticket_clippers/main/ticket_clippers.jpg" width="400em" />
 
 ## Example
 
@@ -44,5 +44,7 @@ ClipPath(
       );
 ```
 ### CREATED BY
+```
  NOBOMAN
-<img src="https://github.com/NouzNoushad/ticket_clippers/raw/main/ticket_clippers.jpg" width="100em" hight="100em"/>
+```
+<img src="https://raw.github.com/NouzNoushad/ticket_clippers/main/noboman.jpg" width="100em" hight="100em"/>
