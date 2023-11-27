@@ -3,6 +3,10 @@ Flutter package that provides you clippers to create tickets.
 ## Getting started
 
 To use this plugin, add ticket_clippers as a [dependency in your pubspec.yaml file](https://flutter.io/docs/development/packages-and-plugins/using-packages).
+```dart
+dependencies:
+  ticket_clippers: 
+```
 
 ## Import
 
@@ -11,7 +15,7 @@ import 'package:ticket_clippers/ticket_clippers.dart';
 ```
 
 ## Screenshots
- <img src="https://github.com/NouzNoushad/ticket_clippers/main/ticket_clippers.jpg" width="400em" />
+ <img src="https://github.com/NouzNoushad/ticket_clippers/raw/main/ticket_clippers.jpg" width="400em" />
 
 ## Example
 
@@ -39,3 +43,6 @@ ClipPath(
         ),
       );
 ```
+### CREATED BY
+ NOBOMAN
+<img src="https://github.com/NouzNoushad/ticket_clippers/raw/main/ticket_clippers.jpg" width="100em" hight="100em"/>
