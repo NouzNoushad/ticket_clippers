@@ -47,4 +47,8 @@ ClipPath(
 ```
  NOBOMAN
 ```
+<<<<<<< HEAD
 <img src="https://raw.github.com/NouzNoushad/ticket_clippers/main/noboman.jpg" width="100em" hight="100em"/>
+=======
+<img src="https://github.com/NouzNoushad/ticket_clippers/raw/main/noboman.jpg" width="100em" hight="100em"/>
+>>>>>>> 0b839917f79e23f6032abca5bf6340d2b402f5e0
