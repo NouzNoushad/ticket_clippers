@@ -21,7 +21,7 @@ class TicketRoundedEdgeClipper extends CustomClipper<Path> {
   Path getClip(Size size) {
     var h = size.height;
     var w = size.width;
-    position = position + (radius / 2);
+    position = position + (radius * 0.25);
     final path = Path();
 
     // Top or Vertical or All
