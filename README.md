@@ -26,7 +26,7 @@ TicketClipper(
       position: 150,
       radius: 25,
     ),
-    shadowRadius: 20,
+    shadowRadius: ShadowRadius.circular(20),
     shadow:  const BoxShadow(
       color: Color.fromARGB(255, 4, 234, 250),
       offset: Offset(12, 12),

@@ -1,6 +1,6 @@
 name: ticket_clippers
 description: Flutter package that provides you clippers to create tickets.
-version: 0.0.6
+version: 0.0.8
 homepage: https://github.com/NouzNoushad/ticket_clippers
 
 environment:

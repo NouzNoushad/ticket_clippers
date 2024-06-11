@@ -13,8 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple)
-      ),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple)),
       debugShowCheckedModeBanner: false,
       home: const MyTicketClipper(),
     );
@@ -39,11 +38,11 @@ class MyTicketClipper extends StatelessWidget {
                   position: 150,
                   radius: 25,
                 ),
-                shadowRadius: 20,
-                shadow:  const BoxShadow(
-                    color: Color.fromARGB(255, 4, 234, 250),
-                    offset: Offset(12, 12),
-                  ),
+                shadowRadius: ShadowRadius.circular(20),
+                shadow: const BoxShadow(
+                  color: Color.fromARGB(255, 4, 234, 250),
+                  offset: Offset(12, 12),
+                ),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
@@ -86,11 +85,11 @@ class MyTicketClipper extends StatelessWidget {
                     child: Text(
                       'Rounded Edge Clipper',
                       textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                        ),
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
@@ -107,24 +106,26 @@ class MyTicketClipper extends StatelessWidget {
                   depth: 10,
                 ),
                 shadow: const BoxShadow(
-                    color: Colors.yellowAccent,
-                    offset: Offset(10, 10),
-                  ),
-                shadowRadius: 20,
+                  color: Colors.yellowAccent,
+                  offset: Offset(10, 10),
+                ),
+                shadowRadius: ShadowRadius.circular(20),
                 child: Container(
                   height: 150,
                   width: 300,
-                  decoration:  BoxDecoration(color: Colors.green,
-                  borderRadius: BorderRadius.circular(20),),
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   child: const Center(
                     child: Text(
                       'Pointed Edge Clipper',
-                     textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                        ),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),

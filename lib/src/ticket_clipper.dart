@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'shadow_radius.dart';
 import 'ticket_painter.dart';
 
 class TicketClipper extends StatelessWidget {
   const TicketClipper({super.key,required this.clipper, this.shadow, required this.child,
-  this.shadowRadius = 0.0});
+  this.shadowRadius});
   /// - [TicketRoundedEdgeClipper] that can be used with [ClipPath] to clip widget in Ticket Rounded Edge shape
   /// - [PointedEdgeClipper] that can be used with [ClipPath] to clip widget in Pointed Edge shape
   /// - [RoundedEdgeClipper] that can be used with [ClipPath] to clip widget in Rounded Edge shape
@@ -12,8 +13,14 @@ class TicketClipper extends StatelessWidget {
   final Widget child;
   /// shadows: [BoxShadow?]
   final BoxShadow? shadow;
-  /// borderRadius: If non-null, the corners of this box shadow are rounded by this [BorderRadius]
-  final double shadowRadius;
+  /// shadowRadius: If non-null, the corners of this box shadow are rounded by this [ShadowRadius]
+  /// - ShadowRadius.all(Radius radius)
+  /// - ShadowRadius.circular(double radius)
+  /// - ShadowRadius.horizontal(Radius left, Radius right)
+  /// - ShadowRadius.vertical(Radius top, Radius bottom)
+  /// - ShadowRadius.only(Radius topLeft, Radius topRight, Radius bottomLeft, Radius bottomRight)
+  /// - ShadowRadius.zero
+  final ShadowRadius? shadowRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +28,7 @@ class TicketClipper extends StatelessWidget {
       painter: TicketShadowPainter(
         clipper: clipper,
         shadow: shadow,
-        borderRadius: shadowRadius,
+        shadowRadius: shadowRadius ?? ShadowRadius.zero,
       ),
       child: ClipPath(
         clipper: clipper,
